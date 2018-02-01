@@ -53,7 +53,7 @@
 #pragma mark - Layout
 - (void)setupLayout {
     CGFloat padding = 10.0f;
-    CGFloat kToTextField =  300.0f;
+    CGFloat kToTextField =  200.0f;
     [_contenTxtView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView.mas_left).offset(padding);
         make.right.equalTo(self.contentView.mas_right).offset(-padding);

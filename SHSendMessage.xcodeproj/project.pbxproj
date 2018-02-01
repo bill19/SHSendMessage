@@ -16,6 +16,8 @@
 		6D554E582021A751000551D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E572021A751000551D3 /* main.m */; };
 		6D554E622021A751000551D3 /* SHSendMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E612021A751000551D3 /* SHSendMessageTests.m */; };
 		6D554E6D2021A751000551D3 /* SHSendMessageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E6C2021A751000551D3 /* SHSendMessageUITests.m */; };
+		6D660ECD2022F4D9004281F4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D660ECC2022F4D9004281F4 /* MediaPlayer.framework */; };
+		6D660ECF2022F4F4004281F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D660ECE2022F4F4004281F4 /* MobileCoreServices.framework */; };
 		6DBB2BE52021AB3600645349 /* SHSendMailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BE42021AB3600645349 /* SHSendMailHeaderCell.m */; };
 		6DBB2BE82021AB5100645349 /* SHSendMailTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BE72021AB5100645349 /* SHSendMailTextCell.m */; };
 		6DBB2BEB2021AB7600645349 /* SHSendMailAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BEA2021AB7600645349 /* SHSendMailAddCell.m */; };
@@ -75,6 +77,8 @@
 		6D554E6C2021A751000551D3 /* SHSendMessageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMessageUITests.m; sourceTree = "<group>"; };
 		6D554E6E2021A751000551D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D5A582C2021B6ED006C2A06 /* SHSendMailHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailHeader.h; sourceTree = "<group>"; };
+		6D660ECC2022F4D9004281F4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6D660ECE2022F4F4004281F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6DBB2BE32021AB3600645349 /* SHSendMailHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailHeaderCell.h; sourceTree = "<group>"; };
 		6DBB2BE42021AB3600645349 /* SHSendMailHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMailHeaderCell.m; sourceTree = "<group>"; };
 		6DBB2BE62021AB5100645349 /* SHSendMailTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailTextCell.h; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D660ECF2022F4F4004281F4 /* MobileCoreServices.framework in Frameworks */,
+				6D660ECD2022F4D9004281F4 /* MediaPlayer.framework in Frameworks */,
 				915A26D7262852DE13D16E03 /* libPods-SHSendMessage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +300,8 @@
 		C17555534195351FA6E92970 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D660ECE2022F4F4004281F4 /* MobileCoreServices.framework */,
+				6D660ECC2022F4D9004281F4 /* MediaPlayer.framework */,
 				1C1290BBA55461C82679A438 /* libPods-SHSendMessage.a */,
 			);
 			name = Frameworks;

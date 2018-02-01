@@ -7,7 +7,7 @@
 //
 
 #import "MTAddImgView.h"
-
+#import <MobileCoreServices/UTCoreTypes.h>
 #define KImageY 0
 @interface MTAddImgView()<ZYQAssetPickerControllerDelegate,ACActionSheetDelegate,MTWCPhotosViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
@@ -143,7 +143,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
 
     NSString *mediaType = info[UIImagePickerControllerMediaType];
-    if([mediaType isEqualToString:@"kUTTypeImage"]) {
+    if([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
         UIImage *resultImage = nil;
         if(picker.allowsEditing){
             resultImage = info[UIImagePickerControllerEditedImage];

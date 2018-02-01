@@ -56,6 +56,7 @@
     toTextField.placeholder = @"邮件地址";
     toTextField.delegate = self;
     toTextField.keyboardType = UIKeyboardTypeEmailAddress;
+    toTextField.clearButtonMode = UITextFieldViewModeAlways;
     _toTextField = toTextField;
     [self.contentView addSubview:_toTextField];
 
@@ -68,6 +69,7 @@
     UITextField *titleTextField = [[UITextField alloc] init];
     titleTextField.placeholder = @"请输入您的主题";
     titleTextField.delegate = self;
+    titleTextField.clearButtonMode = UITextFieldViewModeAlways;
     _titleTextField = titleTextField;
     [self.contentView addSubview:_titleTextField];
 

@@ -1,0 +1,24 @@
+PODS:
+  - EasyMailSender (0.0.2)
+  - IQKeyboardManager (5.0.7)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.13)
+  - ZYQAssetPickerController (1.2.0)
+
+DEPENDENCIES:
+  - EasyMailSender
+  - IQKeyboardManager (~> 5.0.4)
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.13)
+  - ZYQAssetPickerController (~> 1.2.0)
+
+SPEC CHECKSUMS:
+  EasyMailSender: 2699e554968dd4f2fb6cb9679dd6cb4bd90cfae3
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  ZYQAssetPickerController: dc692a6fb421c0dc0efcabd43eb260cfb073f7fd
+
+PODFILE CHECKSUM: d075e1a65c76791af5a3a91a0fed2c560142611f
+
+COCOAPODS: 1.2.1

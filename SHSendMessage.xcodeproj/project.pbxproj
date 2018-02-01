@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D554E472021A751000551D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E462021A751000551D3 /* AppDelegate.m */; };
+		6D554E4A2021A751000551D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E492021A751000551D3 /* ViewController.m */; };
+		6D554E4D2021A751000551D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D554E4B2021A751000551D3 /* Main.storyboard */; };
+		6D554E502021A751000551D3 /* SHSendMessage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E4E2021A751000551D3 /* SHSendMessage.xcdatamodeld */; };
+		6D554E522021A751000551D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D554E512021A751000551D3 /* Assets.xcassets */; };
+		6D554E552021A751000551D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D554E532021A751000551D3 /* LaunchScreen.storyboard */; };
+		6D554E582021A751000551D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E572021A751000551D3 /* main.m */; };
+		6D554E622021A751000551D3 /* SHSendMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E612021A751000551D3 /* SHSendMessageTests.m */; };
+		6D554E6D2021A751000551D3 /* SHSendMessageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D554E6C2021A751000551D3 /* SHSendMessageUITests.m */; };
+		6DBB2BE52021AB3600645349 /* SHSendMailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BE42021AB3600645349 /* SHSendMailHeaderCell.m */; };
+		6DBB2BE82021AB5100645349 /* SHSendMailTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BE72021AB5100645349 /* SHSendMailTextCell.m */; };
+		6DBB2BEB2021AB7600645349 /* SHSendMailAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BEA2021AB7600645349 /* SHSendMailAddCell.m */; };
+		6DBB2BEE2021ABB000645349 /* SHSendMailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BED2021ABB000645349 /* SHSendMailModel.m */; };
+		6DBB2BF82021B3B800645349 /* SHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB2BF72021B3B800645349 /* SHTextView.m */; };
+		6DE5B3422022E5C200AE9B3A /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B3392022E5C200AE9B3A /* Base64Transcoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DE5B3432022E5C200AE9B3A /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B33B2022E5C200AE9B3A /* HSK_CFUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DE5B3442022E5C200AE9B3A /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B33D2022E5C200AE9B3A /* NSData+Base64Additions.m */; };
+		6DE5B3452022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B33F2022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DE5B3462022E5C200AE9B3A /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B3412022E5C200AE9B3A /* SKPSMTPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DE90C002022A0CD00D51440 /* MTAddImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE90BFE2022A0CD00D51440 /* MTAddImgView.m */; };
+		6DE90C032022A19D00D51440 /* MTImageDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE90C022022A19D00D51440 /* MTImageDeleteView.m */; };
+		6DE90C062022A1A400D51440 /* MTWCPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE90C052022A1A400D51440 /* MTWCPhotoView.m */; };
+		6DE90C0B2022A1BA00D51440 /* ACActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DE90C082022A1BA00D51440 /* ACActionSheet.bundle */; };
+		6DE90C0C2022A1BA00D51440 /* ACActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE90C0A2022A1BA00D51440 /* ACActionSheet.m */; };
+		6DE90C0F2022A29800D51440 /* UIView+PBExtesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE90C0E2022A29800D51440 /* UIView+PBExtesion.m */; };
+		6DF89D8B2022B17C0067A408 /* UIImage+ChangeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF89D892022B17C0067A408 /* UIImage+ChangeImage.m */; };
+		915A26D7262852DE13D16E03 /* libPods-SHSendMessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1290BBA55461C82679A438 /* libPods-SHSendMessage.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D554E5E2021A751000551D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D554E3A2021A751000551D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D554E412021A751000551D3;
+			remoteInfo = SHSendMessage;
+		};
+		6D554E692021A751000551D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D554E3A2021A751000551D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D554E412021A751000551D3;
+			remoteInfo = SHSendMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B9E677DF8177B80DAAE9B35 /* Pods-SHSendMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHSendMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHSendMessage/Pods-SHSendMessage.release.xcconfig"; sourceTree = "<group>"; };
+		1C1290BBA55461C82679A438 /* libPods-SHSendMessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHSendMessage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E11D1D87BCB135A6B91309A /* Pods-SHSendMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHSendMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHSendMessage/Pods-SHSendMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		6D554E422021A751000551D3 /* SHSendMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSendMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D554E452021A751000551D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D554E462021A751000551D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D554E482021A751000551D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D554E492021A751000551D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D554E4C2021A751000551D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D554E4F2021A751000551D3 /* SHSendMessage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SHSendMessage.xcdatamodel; sourceTree = "<group>"; };
+		6D554E512021A751000551D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D554E542021A751000551D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D554E562021A751000551D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D554E572021A751000551D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D554E5D2021A751000551D3 /* SHSendMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHSendMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D554E612021A751000551D3 /* SHSendMessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMessageTests.m; sourceTree = "<group>"; };
+		6D554E632021A751000551D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D554E682021A751000551D3 /* SHSendMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHSendMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D554E6C2021A751000551D3 /* SHSendMessageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMessageUITests.m; sourceTree = "<group>"; };
+		6D554E6E2021A751000551D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D5A582C2021B6ED006C2A06 /* SHSendMailHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailHeader.h; sourceTree = "<group>"; };
+		6DBB2BE32021AB3600645349 /* SHSendMailHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailHeaderCell.h; sourceTree = "<group>"; };
+		6DBB2BE42021AB3600645349 /* SHSendMailHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMailHeaderCell.m; sourceTree = "<group>"; };
+		6DBB2BE62021AB5100645349 /* SHSendMailTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailTextCell.h; sourceTree = "<group>"; };
+		6DBB2BE72021AB5100645349 /* SHSendMailTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMailTextCell.m; sourceTree = "<group>"; };
+		6DBB2BE92021AB7600645349 /* SHSendMailAddCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailAddCell.h; sourceTree = "<group>"; };
+		6DBB2BEA2021AB7600645349 /* SHSendMailAddCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMailAddCell.m; sourceTree = "<group>"; };
+		6DBB2BEC2021ABB000645349 /* SHSendMailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHSendMailModel.h; sourceTree = "<group>"; };
+		6DBB2BED2021ABB000645349 /* SHSendMailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHSendMailModel.m; sourceTree = "<group>"; };
+		6DBB2BF62021B3B800645349 /* SHTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTextView.h; sourceTree = "<group>"; };
+		6DBB2BF72021B3B800645349 /* SHTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTextView.m; sourceTree = "<group>"; };
+		6DE5B3382022E5C200AE9B3A /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		6DE5B3392022E5C200AE9B3A /* Base64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Transcoder.m; sourceTree = "<group>"; };
+		6DE5B33A2022E5C200AE9B3A /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
+		6DE5B33B2022E5C200AE9B3A /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
+		6DE5B33C2022E5C200AE9B3A /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		6DE5B33D2022E5C200AE9B3A /* NSData+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Additions.m"; sourceTree = "<group>"; };
+		6DE5B33E2022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		6DE5B33F2022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		6DE5B3402022E5C200AE9B3A /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
+		6DE5B3412022E5C200AE9B3A /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
+		6DE90BFE2022A0CD00D51440 /* MTAddImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAddImgView.m; sourceTree = "<group>"; };
+		6DE90BFF2022A0CD00D51440 /* MTAddImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAddImgView.h; sourceTree = "<group>"; };
+		6DE90C012022A19D00D51440 /* MTImageDeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTImageDeleteView.h; sourceTree = "<group>"; };
+		6DE90C022022A19D00D51440 /* MTImageDeleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTImageDeleteView.m; sourceTree = "<group>"; };
+		6DE90C042022A1A400D51440 /* MTWCPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWCPhotoView.h; sourceTree = "<group>"; };
+		6DE90C052022A1A400D51440 /* MTWCPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWCPhotoView.m; sourceTree = "<group>"; };
+		6DE90C082022A1BA00D51440 /* ACActionSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ACActionSheet.bundle; sourceTree = "<group>"; };
+		6DE90C092022A1BA00D51440 /* ACActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACActionSheet.h; sourceTree = "<group>"; };
+		6DE90C0A2022A1BA00D51440 /* ACActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACActionSheet.m; sourceTree = "<group>"; };
+		6DE90C0D2022A29800D51440 /* UIView+PBExtesion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PBExtesion.h"; sourceTree = "<group>"; };
+		6DE90C0E2022A29800D51440 /* UIView+PBExtesion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PBExtesion.m"; sourceTree = "<group>"; };
+		6DF89D892022B17C0067A408 /* UIImage+ChangeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ChangeImage.m"; sourceTree = "<group>"; };
+		6DF89D8A2022B17C0067A408 /* UIImage+ChangeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ChangeImage.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D554E3F2021A751000551D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915A26D7262852DE13D16E03 /* libPods-SHSendMessage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D554E5A2021A751000551D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D554E652021A751000551D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D554E392021A751000551D3 = {
+			isa = PBXGroup;
+			children = (
+				6D554E442021A751000551D3 /* SHSendMessage */,
+				6D554E602021A751000551D3 /* SHSendMessageTests */,
+				6D554E6B2021A751000551D3 /* SHSendMessageUITests */,
+				6D554E432021A751000551D3 /* Products */,
+				C3EF629645B87BCBD7949977 /* Pods */,
+				C17555534195351FA6E92970 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D554E432021A751000551D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D554E422021A751000551D3 /* SHSendMessage.app */,
+				6D554E5D2021A751000551D3 /* SHSendMessageTests.xctest */,
+				6D554E682021A751000551D3 /* SHSendMessageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D554E442021A751000551D3 /* SHSendMessage */ = {
+			isa = PBXGroup;
+			children = (
+				6D5A582C2021B6ED006C2A06 /* SHSendMailHeader.h */,
+				6DE5B3372022E5C200AE9B3A /* SMTPLibrary */,
+				6DBB2BDC2021A90000645349 /* SHSendClaaa */,
+				6D554E452021A751000551D3 /* AppDelegate.h */,
+				6D554E462021A751000551D3 /* AppDelegate.m */,
+				6D554E4B2021A751000551D3 /* Main.storyboard */,
+				6D554E512021A751000551D3 /* Assets.xcassets */,
+				6D554E532021A751000551D3 /* LaunchScreen.storyboard */,
+				6D554E562021A751000551D3 /* Info.plist */,
+				6D554E572021A751000551D3 /* main.m */,
+				6D554E4E2021A751000551D3 /* SHSendMessage.xcdatamodeld */,
+			);
+			path = SHSendMessage;
+			sourceTree = "<group>";
+		};
+		6D554E602021A751000551D3 /* SHSendMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D554E612021A751000551D3 /* SHSendMessageTests.m */,
+				6D554E632021A751000551D3 /* Info.plist */,
+			);
+			path = SHSendMessageTests;
+			sourceTree = "<group>";
+		};
+		6D554E6B2021A751000551D3 /* SHSendMessageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D554E6C2021A751000551D3 /* SHSendMessageUITests.m */,
+				6D554E6E2021A751000551D3 /* Info.plist */,
+			);
+			path = SHSendMessageUITests;
+			sourceTree = "<group>";
+		};
+		6DBB2BDC2021A90000645349 /* SHSendClaaa */ = {
+			isa = PBXGroup;
+			children = (
+				6DE90BFD2022A0C500D51440 /* SHImgView */,
+				6DBB2BF52021B3A700645349 /* SHTextView */,
+				6DBB2BDD2021A90000645349 /* Controller */,
+				6DBB2BDE2021A90000645349 /* Model */,
+				6DBB2BDF2021A90000645349 /* View */,
+			);
+			path = SHSendClaaa;
+			sourceTree = "<group>";
+		};
+		6DBB2BDD2021A90000645349 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D554E482021A751000551D3 /* ViewController.h */,
+				6D554E492021A751000551D3 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DBB2BDE2021A90000645349 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DBB2BEC2021ABB000645349 /* SHSendMailModel.h */,
+				6DBB2BED2021ABB000645349 /* SHSendMailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DBB2BDF2021A90000645349 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DBB2BE32021AB3600645349 /* SHSendMailHeaderCell.h */,
+				6DBB2BE42021AB3600645349 /* SHSendMailHeaderCell.m */,
+				6DBB2BE62021AB5100645349 /* SHSendMailTextCell.h */,
+				6DBB2BE72021AB5100645349 /* SHSendMailTextCell.m */,
+				6DBB2BE92021AB7600645349 /* SHSendMailAddCell.h */,
+				6DBB2BEA2021AB7600645349 /* SHSendMailAddCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DBB2BF52021B3A700645349 /* SHTextView */ = {
+			isa = PBXGroup;
+			children = (
+				6DBB2BF62021B3B800645349 /* SHTextView.h */,
+				6DBB2BF72021B3B800645349 /* SHTextView.m */,
+			);
+			path = SHTextView;
+			sourceTree = "<group>";
+		};
+		6DE5B3372022E5C200AE9B3A /* SMTPLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				6DE5B3382022E5C200AE9B3A /* Base64Transcoder.h */,
+				6DE5B3392022E5C200AE9B3A /* Base64Transcoder.m */,
+				6DE5B33A2022E5C200AE9B3A /* HSK_CFUtilities.h */,
+				6DE5B33B2022E5C200AE9B3A /* HSK_CFUtilities.m */,
+				6DE5B33C2022E5C200AE9B3A /* NSData+Base64Additions.h */,
+				6DE5B33D2022E5C200AE9B3A /* NSData+Base64Additions.m */,
+				6DE5B33E2022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.h */,
+				6DE5B33F2022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.m */,
+				6DE5B3402022E5C200AE9B3A /* SKPSMTPMessage.h */,
+				6DE5B3412022E5C200AE9B3A /* SKPSMTPMessage.m */,
+			);
+			path = SMTPLibrary;
+			sourceTree = "<group>";
+		};
+		6DE90BFD2022A0C500D51440 /* SHImgView */ = {
+			isa = PBXGroup;
+			children = (
+				6DF89D8A2022B17C0067A408 /* UIImage+ChangeImage.h */,
+				6DF89D892022B17C0067A408 /* UIImage+ChangeImage.m */,
+				6DE90C0D2022A29800D51440 /* UIView+PBExtesion.h */,
+				6DE90C0E2022A29800D51440 /* UIView+PBExtesion.m */,
+				6DE90C072022A1BA00D51440 /* ACActionSheet */,
+				6DE90C042022A1A400D51440 /* MTWCPhotoView.h */,
+				6DE90C052022A1A400D51440 /* MTWCPhotoView.m */,
+				6DE90C012022A19D00D51440 /* MTImageDeleteView.h */,
+				6DE90C022022A19D00D51440 /* MTImageDeleteView.m */,
+				6DE90BFF2022A0CD00D51440 /* MTAddImgView.h */,
+				6DE90BFE2022A0CD00D51440 /* MTAddImgView.m */,
+			);
+			path = SHImgView;
+			sourceTree = "<group>";
+		};
+		6DE90C072022A1BA00D51440 /* ACActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				6DE90C082022A1BA00D51440 /* ACActionSheet.bundle */,
+				6DE90C092022A1BA00D51440 /* ACActionSheet.h */,
+				6DE90C0A2022A1BA00D51440 /* ACActionSheet.m */,
+			);
+			path = ACActionSheet;
+			sourceTree = "<group>";
+		};
+		C17555534195351FA6E92970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C1290BBA55461C82679A438 /* libPods-SHSendMessage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3EF629645B87BCBD7949977 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E11D1D87BCB135A6B91309A /* Pods-SHSendMessage.debug.xcconfig */,
+				1B9E677DF8177B80DAAE9B35 /* Pods-SHSendMessage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D554E412021A751000551D3 /* SHSendMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D554E712021A752000551D3 /* Build configuration list for PBXNativeTarget "SHSendMessage" */;
+			buildPhases = (
+				4647DEDDA5EA5335CEAF6E92 /* [CP] Check Pods Manifest.lock */,
+				6D554E3E2021A751000551D3 /* Sources */,
+				6D554E3F2021A751000551D3 /* Frameworks */,
+				6D554E402021A751000551D3 /* Resources */,
+				3A1B5323B6363465A04A11CD /* [CP] Embed Pods Frameworks */,
+				7EDFE1D85298D0867A4C0F24 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHSendMessage;
+			productName = SHSendMessage;
+			productReference = 6D554E422021A751000551D3 /* SHSendMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D554E5C2021A751000551D3 /* SHSendMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D554E742021A752000551D3 /* Build configuration list for PBXNativeTarget "SHSendMessageTests" */;
+			buildPhases = (
+				6D554E592021A751000551D3 /* Sources */,
+				6D554E5A2021A751000551D3 /* Frameworks */,
+				6D554E5B2021A751000551D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D554E5F2021A751000551D3 /* PBXTargetDependency */,
+			);
+			name = SHSendMessageTests;
+			productName = SHSendMessageTests;
+			productReference = 6D554E5D2021A751000551D3 /* SHSendMessageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D554E672021A751000551D3 /* SHSendMessageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D554E772021A752000551D3 /* Build configuration list for PBXNativeTarget "SHSendMessageUITests" */;
+			buildPhases = (
+				6D554E642021A751000551D3 /* Sources */,
+				6D554E652021A751000551D3 /* Frameworks */,
+				6D554E662021A751000551D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D554E6A2021A751000551D3 /* PBXTargetDependency */,
+			);
+			name = SHSendMessageUITests;
+			productName = SHSendMessageUITests;
+			productReference = 6D554E682021A751000551D3 /* SHSendMessageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D554E3A2021A751000551D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = YHKIT;
+				TargetAttributes = {
+					6D554E412021A751000551D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6D554E5C2021A751000551D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D554E412021A751000551D3;
+					};
+					6D554E672021A751000551D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D554E412021A751000551D3;
+					};
+				};
+			};
+			buildConfigurationList = 6D554E3D2021A751000551D3 /* Build configuration list for PBXProject "SHSendMessage" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 6D554E392021A751000551D3;
+			productRefGroup = 6D554E432021A751000551D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D554E412021A751000551D3 /* SHSendMessage */,
+				6D554E5C2021A751000551D3 /* SHSendMessageTests */,
+				6D554E672021A751000551D3 /* SHSendMessageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D554E402021A751000551D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D554E552021A751000551D3 /* LaunchScreen.storyboard in Resources */,
+				6D554E522021A751000551D3 /* Assets.xcassets in Resources */,
+				6D554E4D2021A751000551D3 /* Main.storyboard in Resources */,
+				6DE90C0B2022A1BA00D51440 /* ACActionSheet.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D554E5B2021A751000551D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D554E662021A751000551D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A1B5323B6363465A04A11CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHSendMessage/Pods-SHSendMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4647DEDDA5EA5335CEAF6E92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EDFE1D85298D0867A4C0F24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHSendMessage/Pods-SHSendMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D554E3E2021A751000551D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D554E502021A751000551D3 /* SHSendMessage.xcdatamodeld in Sources */,
+				6DE5B3432022E5C200AE9B3A /* HSK_CFUtilities.m in Sources */,
+				6D554E4A2021A751000551D3 /* ViewController.m in Sources */,
+				6DE90C062022A1A400D51440 /* MTWCPhotoView.m in Sources */,
+				6DBB2BF82021B3B800645349 /* SHTextView.m in Sources */,
+				6DF89D8B2022B17C0067A408 /* UIImage+ChangeImage.m in Sources */,
+				6DE5B3452022E5C200AE9B3A /* NSStream+SKPSMTPExtensions.m in Sources */,
+				6DE90C0C2022A1BA00D51440 /* ACActionSheet.m in Sources */,
+				6DBB2BEB2021AB7600645349 /* SHSendMailAddCell.m in Sources */,
+				6DE5B3422022E5C200AE9B3A /* Base64Transcoder.m in Sources */,
+				6DBB2BE82021AB5100645349 /* SHSendMailTextCell.m in Sources */,
+				6D554E582021A751000551D3 /* main.m in Sources */,
+				6DE90C032022A19D00D51440 /* MTImageDeleteView.m in Sources */,
+				6DBB2BEE2021ABB000645349 /* SHSendMailModel.m in Sources */,
+				6DE90C002022A0CD00D51440 /* MTAddImgView.m in Sources */,
+				6DBB2BE52021AB3600645349 /* SHSendMailHeaderCell.m in Sources */,
+				6DE5B3442022E5C200AE9B3A /* NSData+Base64Additions.m in Sources */,
+				6D554E472021A751000551D3 /* AppDelegate.m in Sources */,
+				6DE5B3462022E5C200AE9B3A /* SKPSMTPMessage.m in Sources */,
+				6DE90C0F2022A29800D51440 /* UIView+PBExtesion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D554E592021A751000551D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D554E622021A751000551D3 /* SHSendMessageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D554E642021A751000551D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D554E6D2021A751000551D3 /* SHSendMessageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D554E5F2021A751000551D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D554E412021A751000551D3 /* SHSendMessage */;
+			targetProxy = 6D554E5E2021A751000551D3 /* PBXContainerItemProxy */;
+		};
+		6D554E6A2021A751000551D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D554E412021A751000551D3 /* SHSendMessage */;
+			targetProxy = 6D554E692021A751000551D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D554E4B2021A751000551D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D554E4C2021A751000551D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D554E532021A751000551D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D554E542021A751000551D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D554E6F2021A752000551D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D554E702021A752000551D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D554E722021A752000551D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E11D1D87BCB135A6B91309A /* Pods-SHSendMessage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN3M9RC4UW;
+				INFOPLIST_FILE = SHSendMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YHKIT.SHSendMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D554E732021A752000551D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9E677DF8177B80DAAE9B35 /* Pods-SHSendMessage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN3M9RC4UW;
+				INFOPLIST_FILE = SHSendMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YHKIT.SHSendMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D554E752021A752000551D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN3M9RC4UW;
+				INFOPLIST_FILE = SHSendMessageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YHKIT.SHSendMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHSendMessage.app/SHSendMessage";
+			};
+			name = Debug;
+		};
+		6D554E762021A752000551D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN3M9RC4UW;
+				INFOPLIST_FILE = SHSendMessageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YHKIT.SHSendMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHSendMessage.app/SHSendMessage";
+			};
+			name = Release;
+		};
+		6D554E782021A752000551D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN3M9RC4UW;
+				INFOPLIST_FILE = SHSendMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YHKIT.SHSendMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SHSendMessage;
+			};
+			name = Debug;
+		};
+		6D554E792021A752000551D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN3M9RC4UW;
+				INFOPLIST_FILE = SHSendMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YHKIT.SHSendMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SHSendMessage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D554E3D2021A751000551D3 /* Build configuration list for PBXProject "SHSendMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D554E6F2021A752000551D3 /* Debug */,
+				6D554E702021A752000551D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D554E712021A752000551D3 /* Build configuration list for PBXNativeTarget "SHSendMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D554E722021A752000551D3 /* Debug */,
+				6D554E732021A752000551D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D554E742021A752000551D3 /* Build configuration list for PBXNativeTarget "SHSendMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D554E752021A752000551D3 /* Debug */,
+				6D554E762021A752000551D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D554E772021A752000551D3 /* Build configuration list for PBXNativeTarget "SHSendMessageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D554E782021A752000551D3 /* Debug */,
+				6D554E792021A752000551D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D554E4E2021A751000551D3 /* SHSendMessage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D554E4F2021A751000551D3 /* SHSendMessage.xcdatamodel */,
+			);
+			currentVersion = 6D554E4F2021A751000551D3 /* SHSendMessage.xcdatamodel */;
+			path = SHSendMessage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6D554E3A2021A751000551D3 /* Project object */;
+}

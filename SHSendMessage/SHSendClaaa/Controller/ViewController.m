@@ -58,7 +58,7 @@
     self.navigationController.navigationBar.translucent = NO;
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *img = [[UIImage imageNamed:@"circle_send_start"] changeImageWithColor:[UIColor greenColor]];
+    UIImage *img = [[UIImage imageNamed:@"circle_send_start"] changeImageWithColor:[UIColor blackColor]];
     [btn setBackgroundImage:img forState:UIControlStateNormal];
     [btn setBackgroundImage:img forState:UIControlStateHighlighted];
     btn.frame = CGRectMake(0, 0, 30, 30);
@@ -134,7 +134,7 @@
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         tableView.delegate = self;
         tableView.dataSource = self;
-        tableView.estimatedRowHeight = 100.0f;
+        tableView.estimatedRowHeight = 40.0f;
         tableView.estimatedSectionFooterHeight = 0;
         tableView.estimatedSectionHeaderHeight = 0;
         tableView.showsVerticalScrollIndicator = NO;
@@ -165,6 +165,7 @@
 }
 
 - (void)sendAccusation {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [self sendMailForMe];
 //    [self sendMail];
 }
@@ -187,9 +188,24 @@
     myMessage.wantsSecure = YES; //为gmail邮箱设置 smtp.gmail.com
     myMessage.subject = _mailModel.subjectTitle;
     myMessage.delegate = self;
+    NSString *mailBody = _mailModel.messageText.length>0?_mailModel.messageText:@"";
+
+    NSMutableArray *mu = [NSMutableArray array];
     //设置邮件内容
-    NSDictionary *plainPart = [NSDictionary dictionaryWithObjectsAndKeys:@"text/plain; charset=UTF-8",kSKPSMTPPartContentTypeKey,_mailModel.messageText,kSKPSMTPPartMessageKey,@"8bit",kSKPSMTPPartContentTransferEncodingKey,nil];
-    myMessage.parts = [NSArray arrayWithObjects:plainPart,nil];
+    NSDictionary *plainPart = [NSDictionary dictionaryWithObjectsAndKeys:@"image/jpeg; charset=UTF-8",kSKPSMTPPartContentTypeKey,mailBody,kSKPSMTPPartMessageKey,@"8bit",kSKPSMTPPartContentTransferEncodingKey,nil];
+    //添加图片
+    for (NSInteger index = 0; index < _mailModel.sendImages.count; index ++) {
+        NSString *fileName2 = [NSString stringWithFormat:@"attachment;\r\n\tfilename=\"%ld.jpeg\"",index];
+        UIImage *image = [_mailModel.sendImages objectAtIndex:index];
+        NSData *imgData = UIImageJPEGRepresentation(image, 0.3);
+        NSDictionary *imagePart = [NSDictionary dictionaryWithObjectsAndKeys:@"image/jpg;\r\n\tx-unix-mode=0644;\r\n\tname=\"test.jpg\"",kSKPSMTPPartContentTypeKey,
+                                   fileName2,kSKPSMTPPartContentDispositionKey,[imgData encodeBase64ForData],kSKPSMTPPartMessageKey,@"base64",kSKPSMTPPartContentTransferEncodingKey,nil];
+        [mu addObject:imagePart];
+    }
+
+    [mu addObject:plainPart];
+
+    myMessage.parts = [NSArray arrayWithArray:mu];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [myMessage send];
     });
@@ -199,6 +215,7 @@
  使用MF发送邮件
  */
 - (void)sendMail {
+
     EasyMailAlertSender *mailSender = [EasyMailAlertSender easyMail:^(MFMailComposeViewController *controller) {
         // Setup
         [controller setSubject:_mailModel.subjectTitle];
@@ -232,7 +249,7 @@
 }
 
 - (void)messageSent:(SKPSMTPMessage *)message {
-
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     NSUserDefaults *sendMailInfo = [NSUserDefaults standardUserDefaults];
     SHSendMailModel *model = [SHSendMailModel new];
     model.subjectTitle = _mailModel.subjectTitle;
@@ -248,7 +265,7 @@
 }
 
 - (void)messageFailed:(SKPSMTPMessage *)message error:(NSError *)error {
-
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     UIAlertController *alVc = [UIAlertController alertControllerWithTitle:@"信息提示" message:@"邮件发送失败" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     }];

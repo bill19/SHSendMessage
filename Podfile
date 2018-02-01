@@ -9,4 +9,5 @@ pod 'Masonry', '~> 1.1.0'
 pod 'MJExtension', '~> 3.0.13'
 pod 'EasyMailSender'
 pod 'ZYQAssetPickerController',  '~> 1.2.0'
+pod 'MBProgressHUD', '~> 1.1.0'
 end

@@ -86,7 +86,7 @@
     [_toTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView.mas_left).offset(padding);
         make.right.equalTo(self.contentView.mas_right).offset(-padding);
-        make.top.equalTo(self.contentView.mas_top).offset(padding*3);
+        make.top.equalTo(self.contentView.mas_top).offset(padding);
         make.height.equalTo(@(kToTextField));
     }];
 

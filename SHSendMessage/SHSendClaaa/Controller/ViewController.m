@@ -183,7 +183,7 @@
     myMessage.requiresAuth=YES;
     if (myMessage.requiresAuth) {
         myMessage.login = @"ocsh@qq.com";
-        myMessage.pass = @"axbzcseczehtbfha";
+        myMessage.pass = @"需要自己填写密码";
     }
     myMessage.wantsSecure = YES; //为gmail邮箱设置 smtp.gmail.com
     myMessage.subject = _mailModel.subjectTitle;
